@@ -144,7 +144,7 @@ Post-hackathon, EcoAudit-AI plans to transition our mock database ledger to a ve
 ## ✍️ Authors & Team 
 **Team ByteForce (ID: SEH26_114)**
 - **Adityaraj Gupta (DevOps / DevSecOps Lead)** - Infrastructure & Deployment
-- **Aryan Arihwar (CAIO)** - Multi-Modal Deep Learning & GEE Pipelines
+- **Aryan Ahirwar (CAIO)** - Multi-Modal Deep Learning & GEE Pipelines
 - **Krishna Agrawal (CTO)** - FastAPI Backend & Ledger Integration
 - **Ronak Kumar (CPO)** - Next.js UI/UX & Geospatial Frontend
 
