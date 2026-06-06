@@ -65,25 +65,22 @@ By fusing **Sentinel-1 (Synthetic Aperture Radar)** and **Sentinel-2 (Optical)**
 ---
 
 ## 🏗️ System Architecture & Methodology 
-Our backend data ingestion and machine learning pipeline (CIOPB) operates through advanced feature engineering:
+Our backend data ingestion and machine learning pipeline (CIOPB) transitions seamlessly from raw geospatial extraction to automated validation reports:
 
-```text
-                  ┌──────────────────────────────────────────────┐
-                  │ GEDI Spaceborne LiDAR (Ground Truth Target)  │
-                  └──────────────┬───────────────────────────────┘
-                                 ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│              ECOAUDIT AI ML BIOMASS REGRESSION ENGINE                   │
-└▲─────────────────▲─────────────────▲──────────────────▲────────────────▲┘
- │ (Optical Bands) │ (SAR Radar)     │ (Veg Indices)    │ (Terrain)      │
- ├─────────────────┼─────────────────┼──────────────────┼────────────────┤
- │ Sentinel-2 MSI  │ Sentinel-1 GRD  │ NDVI, EVI, NDRE, │ SRTM Elevation │
- │ B2, B3, B4...   │ C-Band VV, VH   │ NDWI + COSI      │ & Slope        │
-```
+## 🏗️ System Architecture & Methodology 
+Our backend data ingestion and machine learning pipeline transitions seamlessly from raw multi-modal geospatial extraction to predictive analytics and automated verification reports:
 
-1. **Multi-Modal Data Fusion:** Blends structural radar geometry with spectral indices using custom **COSI (Combined Optical and SAR Indices)**.
-2. **Deep Learning Engine:** Utilizes a **BiLSTM** neural network to map non-linear geospatial relationships across dimensions.
-3. **Swarm Optimization:** Fine-tunes model hyperparameters automatically using a **PIO (Pigeon-Inspired Optimization)** loop.
+<p align="center">
+  <img src="assets/flowchart.jpeg" alt="EcoAudit-AI End-to-End System Architecture Flowchart" width="95%">
+  <br>
+  <em>Figure: Detailed pipeline illustrating multi-modal satellite data ingestion, Random Forest regression, and dMRV reporting layers.</em>
+</p>
+
+1. **Multi-Modal Data Fusion & Engineering:** Collects structural radar geometry (**Sentinel-1 Radar**) and multi-spectral bands (**Sentinel-2 Optical**), filtering out cloud occlusion while calculating key vegetation indices and terrain slopes over selected Regions of Interest (ROI).
+
+2. **Predictive Modeling Engine:** Utilizes an optimized **Random Forest Regression Model** trained against high-integrity **GEDI Spaceborne LiDAR** ground-truth targets to model complex, non-linear environmental relationships.
+
+3. **Feature Valuation & Assessment:** Leverages the **Gini Index (MDI)** for strict feature importance ranking, ensuring transparent model explainability before calculating localized biomass, assessing total accuracy, and compiling structural validation reports.
 
 ---
 
@@ -146,10 +143,10 @@ Post-hackathon, EcoAudit-AI plans to transition our mock database ledger to a ve
 
 ## ✍️ Authors & Team 
 **Team ByteForce (ID: SEH26_114)**
-- **Aditya (DevOps / DevSecOps Lead)** - Infrastructure & Deployment
-- **[Teammate 1 Name] (CAIO)** - Multi-Modal Deep Learning & GEE Pipelines
-- **[Teammate 2 Name] (CTO)** - FastAPI Backend & Ledger Integration
-- **[Teammate 3 Name] (CPO)** - Next.js UI/UX & Geospatial Frontend
+- **Adityaraj Gupta (DevOps / DevSecOps Lead)** - Infrastructure & Deployment
+- **Aryan Arihwar (CAIO)** - Multi-Modal Deep Learning & GEE Pipelines
+- **Krishna Agrawal (CTO)** - FastAPI Backend & Ledger Integration
+- **Ronak Kumar (CPO)** - Next.js UI/UX & Geospatial Frontend
 
 ## 🎉 Acknowledgments
 - **2nd SmartEarth 2026 Hackathon** organizers and Grand Jury at Nazarbayev University.
