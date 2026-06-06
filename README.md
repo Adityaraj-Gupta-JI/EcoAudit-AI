@@ -149,7 +149,7 @@ Post-hackathon, EcoAudit-AI plans to transition our mock database ledger to a ve
 - **Aditya (DevOps / DevSecOps Lead)** - Infrastructure & Deployment
 - **[Teammate 1 Name] (CAIO)** - Multi-Modal Deep Learning & GEE Pipelines
 - **[Teammate 2 Name] (CTO)** - FastAPI Backend & Ledger Integration
-- **[Teammate 3 Name] (CPO)** - Next.js UI/UX & Geospatial Frontend
+- **[Ronak Kumar Jain] (CPO)** - Next.js UI/UX & Geospatial Frontend
 
 ## 🎉 Acknowledgments
 - **2nd SmartEarth 2026 Hackathon** organizers and Grand Jury at Nazarbayev University.
